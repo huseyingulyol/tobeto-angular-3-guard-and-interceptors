@@ -1,0 +1,17 @@
+<h2>Products</h2>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>UNIT PRICE</th>
+  </tr>
+  @for (item of ProductList; track $index) {
+    <tr>
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.unitPrice}}</td>
+    </tr>
+  }
+  
+</table>
+
